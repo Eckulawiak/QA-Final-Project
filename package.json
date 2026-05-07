@@ -1,0 +1,24 @@
+{
+  "name": "smartgym-class-booking",
+  "version": "1.0.0",
+  "description": "SER330 SmartGym class booking React application with a Node API and QA-focused tests.",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.mjs",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  },
+  "keywords": [
+    "react",
+    "smartgym",
+    "ser330",
+    "quality-assurance"
+  ],
+  "author": "",
+  "license": "MIT"
+}

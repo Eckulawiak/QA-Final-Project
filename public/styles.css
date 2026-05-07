@@ -1,0 +1,309 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f5f7fb;
+  color: #182033;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #182033;
+  padding: 0.68rem 0.9rem;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  border-color: #0f766e;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+main {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 48px;
+}
+
+.auth {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.authPanel,
+.toolPanel,
+.tablePanel,
+.empty {
+  background: #ffffff;
+  border: 1px solid #dbe3ef;
+  border-radius: 8px;
+  box-shadow: 0 16px 40px rgba(24, 32, 51, 0.08);
+}
+
+.authPanel {
+  width: min(520px, 100%);
+  padding: 32px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #0f766e;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.02;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.12rem;
+  margin-bottom: 4px;
+}
+
+form {
+  display: grid;
+  gap: 14px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  color: #475569;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.78rem 0.85rem;
+}
+
+.primary,
+.tabs .active,
+.modeSwitch .active {
+  background: #0f766e;
+  border-color: #0f766e;
+  color: #ffffff;
+}
+
+.modeSwitch,
+.quickLogins,
+.tabs,
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.modeSwitch,
+.quickLogins {
+  margin-bottom: 18px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 18px;
+}
+
+.account {
+  display: grid;
+  gap: 4px;
+  justify-items: end;
+}
+
+.tabs {
+  margin: 8px 0 18px;
+}
+
+.notice {
+  margin: 12px 0 18px;
+  border-left: 4px solid #f59e0b;
+  background: #fff7ed;
+  padding: 12px 14px;
+  border-radius: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 16px;
+}
+
+.classCard {
+  display: grid;
+  gap: 16px;
+  min-height: 290px;
+  background: #ffffff;
+  border: 1px solid #dbe3ef;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.classHead {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.classHead p {
+  color: #64748b;
+  margin-bottom: 0;
+}
+
+.pill {
+  align-self: start;
+  border-radius: 999px;
+  padding: 0.35rem 0.62rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  background: #dcfce7;
+  color: #166534;
+}
+
+.pill.full {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.pill.cancelled {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+}
+
+dt {
+  color: #64748b;
+  font-size: 0.78rem;
+}
+
+dd {
+  margin: 2px 0 0;
+  font-weight: 800;
+}
+
+.tablePanel,
+.toolPanel,
+.empty {
+  padding: 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 14px 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  color: #475569;
+  font-size: 0.82rem;
+}
+
+.staffLayout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(320px, 1.15fr);
+  gap: 16px;
+}
+
+.manageRow,
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.notifications {
+  display: grid;
+  gap: 12px;
+}
+
+.notification {
+  align-items: flex-start;
+  display: grid;
+  background: #ffffff;
+  border: 1px solid #dbe3ef;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.notification p {
+  margin-bottom: 4px;
+}
+
+.notification span {
+  color: #64748b;
+  font-size: 0.84rem;
+}
+
+.empty {
+  color: #64748b;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  main {
+    width: min(100% - 20px, 1180px);
+  }
+
+  .topbar,
+  .classHead,
+  .staffLayout {
+    display: grid;
+  }
+
+  .account {
+    justify-items: start;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
