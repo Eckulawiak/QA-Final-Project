@@ -140,8 +140,8 @@ function AuthScreen({ setUser, setMessage, message }) {
   const [mode, setMode] = useState("login");
   const [form, setForm] = useState({
     name: "",
-    email: "member@smartgym.test",
-    password: "password123",
+    email: "",
+    password: "",
   });
 
   const submit = async (event) => {
