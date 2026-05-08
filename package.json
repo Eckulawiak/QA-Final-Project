@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node server/server.mjs",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
   },
   "dependencies": {
     "express": "^5.1.0"
